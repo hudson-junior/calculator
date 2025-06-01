@@ -100,7 +100,6 @@ button:hover {
 @media (max-width: 500px) {
   .display {
     font-size: 14px;
-    height: auto;
   }
 
   .display-principal {
