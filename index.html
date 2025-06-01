@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Calculadora</title>
+</head>
+<body>
+  <main>
+    <!-- Visor da calculadora -->
+    <div class="display">
+      <p class="numerical-expression"></p>
+      <h2 class="display-principal">0</h2>
+    </div>
+    <section class="buttons">
+      <!-- Coluna 1 -->
+      <div>
+        <button class="clear" onclick="clearDisplay()">C</button>
+        <button onclick="saveNumber('7')">7</button>
+        <button onclick="saveNumber('4')">4</button>
+        <button onclick="saveNumber('1')">1</button>
+        <button onclick="saveNumber('0')">0</button>
+      </div>
+      <!-- Coluna 2 -->
+      <div>
+        <button onclick="deleteLast()">⌫</button>
+        <button onclick="saveNumber('8')">8</button>
+        <button onclick="saveNumber('5')">5</button>
+        <button onclick="saveNumber('2')">2</button>
+        <button onclick="saveNumber('.')">.</button>
+      </div>
+      <!-- Coluna 3 -->
+      <div>
+        <button onclick="saveParenteses()">(  )</button>
+        <button onclick="saveNumber('9')">9</button>
+        <button onclick="saveNumber('6')">6</button>
+        <button onclick="saveNumber('3')">3</button>
+        <button onclick="changeSignal()">±</button>
+      </div>
+      <!-- Coluna 4 -->
+      <div>
+        <button onclick="percentage()">%</button>
+        <button onclick="exponent()">xˆy</button>
+        <button onclick="sqrt()">√</button>
+        <button class="bigger-button" onclick="equal()">=</button>
+      </div>
+      <!-- Coluna 5 -->
+      <div>
+        <button class="operations" onclick="divide()">÷</button>
+        <button class="operations" onclick="multiply()">x</button>
+        <button class="operations" onclick="subtract()">-</button>
+        <button class="bigger-button operations" onclick="add()">+</button>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="./scripts.js"></script>
+</html>
